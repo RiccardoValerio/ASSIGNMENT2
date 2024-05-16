@@ -28,5 +28,16 @@ public class RomanPrinterTest {
                      "    \\/    \n", five);
                 
     }
+
+    @Test
+    public void PrintAsciiArt_10_Printed(){
+        String ten = RomanPrinter.print(10);
+        assertEquals("__   __ \n"+
+                     "\\ \\ / / \n"+
+                     " \\ V /  \n"+
+                     "  > <   \n"+
+                     " / . \\  \n"+
+                     "/_/ \\_\\ \n", ten);          
+    }
     
 }

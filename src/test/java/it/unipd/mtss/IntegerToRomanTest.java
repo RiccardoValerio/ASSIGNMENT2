@@ -21,6 +21,11 @@ public class IntegerToRomanTest {
         assertEquals("III", IntegerToRoman.convert(3));
     }
 
+    @Test
+    public void Convert_10_X(){
+        assertEquals("X", IntegerToRoman.convert(10));
+    }
+
     @Test(expected = NumberFormatException.class)
     public void Convert_char_NumberFormatException(){
         IntegerToRoman.convert(Integer.parseInt("a"));
@@ -32,7 +37,7 @@ public class IntegerToRomanTest {
     }
     
     @Test(expected = IllegalArgumentException.class)
-    public void Convert_7_IllegalArgumentException(){
-        IntegerToRoman.convert(7);
+    public void Convert_11_IllegalArgumentException(){
+        IntegerToRoman.convert(11);
     }
 }
