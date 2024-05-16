@@ -8,16 +8,16 @@ package it.unipd.mtss;
 public class IntegerToRoman {
     
     public static String convert(int number){
-        String[] i = {"I", "II", "III"};
+        String[] i = {"I", "II", "III", "IV", "V", "VI"};
 
-        if (number < 1 || number > 3) {
+        if (number < 1 || number > 6) {
             throw new IllegalArgumentException(
-                "Input must be between 1 and 3"
+                "Input must be between 1 and 6"
             );
         }
 
-        int pos=number-1;
-        String res=i[pos];
+        int pos = number-1;
+        String res = i[pos];
         return res;
     }    
 }
