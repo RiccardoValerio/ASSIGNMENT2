@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 public class RomanPrinterTest {
 
     @Test
-    public void printAsciiArt_uno_printed(){
+    public void PrintAsciiArt_1_Printed(){
         String one = RomanPrinter.print(1);
         assertEquals(" _____ \n"+
                      "|_   _|\n"+
@@ -15,6 +15,18 @@ public class RomanPrinterTest {
                      "  | |  \n"+
                      " _| |_ \n"+
                      "|_____|\n" , one);
-        }
+    }
+
+    @Test
+    public void PrintAsciiArt_5_Printed(){
+        String five = RomanPrinter.print(5);
+        assertEquals("__      __\n"+
+                     "\\ \\    / /\n"+
+                     " \\ \\  / / \n"+
+                     "  \\ \\/ /  \n"+
+                     "   \\  /   \n"+
+                     "    \\/    \n", five);
+                
+    }
     
 }

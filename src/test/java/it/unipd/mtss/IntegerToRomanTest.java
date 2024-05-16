@@ -12,23 +12,27 @@ import org.junit.Test;
 public class IntegerToRomanTest {
 
     @Test
-    public void testConvertOnetoRoman(){
+    public void Convert_1_I(){
         assertEquals("I", IntegerToRoman.convert(1));
     }
+    
     @Test
-    public void testConvertThreetoRoman(){
+    public void Convert_3_III(){
         assertEquals("III", IntegerToRoman.convert(3));
     }
+
     @Test(expected = NumberFormatException.class)
-    public void testConvertStringtoRoman(){
+    public void Convert_char_NumberFormatException(){
         IntegerToRoman.convert(Integer.parseInt("a"));
     }
+
     @Test(expected = IllegalArgumentException.class)
-    public void testConvertNumberMinorOnetoRoman(){
+    public void Convert_0_IllegalArgumentException(){
         IntegerToRoman.convert(0);
     }
+    
     @Test(expected = IllegalArgumentException.class)
-    public void testConvertNumber4Roman(){
-        IntegerToRoman.convert(4);
+    public void Convert_7_IllegalArgumentException(){
+        IntegerToRoman.convert(7);
     }
 }
