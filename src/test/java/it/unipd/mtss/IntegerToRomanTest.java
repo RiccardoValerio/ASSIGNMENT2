@@ -51,6 +51,11 @@ public class IntegerToRomanTest {
         assertEquals("D", IntegerToRoman.convert(500));
     }
 
+    @Test
+    public void Convert_1000_M(){
+        assertEquals("M", IntegerToRoman.convert(1000));
+    }
+
     @Test(expected = NumberFormatException.class)
     public void Convert_char_NumberFormatException(){
         IntegerToRoman.convert(Integer.parseInt("a"));
@@ -62,7 +67,7 @@ public class IntegerToRomanTest {
     }
     
     @Test(expected = IllegalArgumentException.class)
-    public void Convert_501_IllegalArgumentException(){
-        IntegerToRoman.convert(501);
+    public void Convert_1001_IllegalArgumentException(){
+        IntegerToRoman.convert(1001);
     }
 }
