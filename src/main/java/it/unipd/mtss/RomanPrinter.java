@@ -36,6 +36,15 @@ public class RomanPrinter {
         "/_/ \\_\\ "    
     };
 
+    private static final String FIFTY_ASCII[] ={
+        " _       ",
+        "| |      ",
+        "| |      ",
+        "| |      ",
+        "| |____  ",
+        "|______| "   
+    };
+
     private static final Map<Character, String[]> romanToAscii = 
         new HashMap<>();
     
@@ -43,6 +52,7 @@ public class RomanPrinter {
         romanToAscii.put('I', ONE_ASCII);
         romanToAscii.put('V', FIVE_ASCII);
         romanToAscii.put('X', TEN_ASCII);
+        romanToAscii.put('L', FIFTY_ASCII);
     }
 
     public static String print(int num){
