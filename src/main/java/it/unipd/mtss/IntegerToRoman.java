@@ -9,13 +9,13 @@ public class IntegerToRoman {
     
     private static String[] i = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
     private static String[] x = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
-    private static String[] c = {"", "C"};
+    private static String[] c = {"", "C", "CC"};
     
     public static String convert(int number){
 
-        if (number < 1 || number > 100) {
+        if (number < 1 || number > 200) {
             throw new IllegalArgumentException(
-                "Input must be between 1 and 100"
+                "Input must be between 1 and 200"
             );
         }
 
