@@ -72,5 +72,16 @@ public class RomanPrinterTest {
                      "| |____  \n"+
                      " \\_____| \n", hundred);          
     }
+
+    @Test
+    public void PrintAsciiArt_200_Printed(){
+        String twoHundred = RomanPrinter.print(200);
+        assertEquals("  _____    _____  \n"+
+                     " / ____|  / ____| \n"+
+                     "| |      | |      \n"+
+                     "| |      | |      \n"+
+                     "| |____  | |____  \n"+
+                     " \\_____|  \\_____| \n", twoHundred);          
+    }
     
 }
