@@ -75,13 +75,24 @@ public class RomanPrinterTest {
 
     @Test
     public void PrintAsciiArt_200_Printed(){
-        String twoHundred = RomanPrinter.print(200);
+        String twoHundreds = RomanPrinter.print(200);
         assertEquals("  _____    _____  \n"+
                      " / ____|  / ____| \n"+
                      "| |      | |      \n"+
                      "| |      | |      \n"+
                      "| |____  | |____  \n"+
-                     " \\_____|  \\_____| \n", twoHundred);          
+                     " \\_____|  \\_____| \n", twoHundreds);          
+    }
+
+    @Test
+    public void PrintAsciiArt_500_Printed(){
+        String fiveHundreds = RomanPrinter.print(500);
+        assertEquals(" _____   \n"+
+                     "|  __ \\  \n"+
+                     "| |  | | \n"+
+                     "| |  | | \n"+
+                     "| |__| | \n"+
+                     "|_____/  \n", fiveHundreds);          
     }
     
 }
