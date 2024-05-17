@@ -47,4 +47,4 @@ jobs:
           name: jacoco-report
           path: target/site/jacoco/
       - name: Coveralls Coverage Report Submission
-        run: mvn coveralls:report --define repoToken=${{secrets.COVERALLS_REPO_SECRET}}
+        run: mvn coveralls:report --define repoToken=${{secrets.COVERALLS_REPO_TOKEN}}
